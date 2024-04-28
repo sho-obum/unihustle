@@ -56,7 +56,7 @@ const Messages = () => {
                     (!currentUser.isSeller && !c.readByBuyer)) &&
                   "active"
                 }
-                key={c.id}
+                key={c.username}
               >
                 <td>{currentUser.isSeller ? c.buyerId : c.sellerId}</td>
                 <td>

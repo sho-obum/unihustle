@@ -12,11 +12,21 @@ export const createGig = async (req, res, next) => {
 
   try {
     const savedGig = await newGig.save();
+    console.log("Saved gig:", savedGig);
     res.status(201).json(savedGig);
   } catch (err) {
-    next(err);
+    console.error("Error saving gig:", err);
+    if (err.response && err.response.data) {
+      console.error("Server error response:", err.response.data);
+      // If the server error response contains a message field, send it to the client
+      const errorMessage = err.response.data.message || "Internal Server Error";
+      res.status(err.response.status || 500).json({ error: errorMessage });
+    } else {
+      next(err);
+    }
   }
 };
+
 export const deleteGig = async (req, res, next) => {
   try {
     const gig = await Gig.findById(req.params.id);

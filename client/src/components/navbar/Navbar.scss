@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #013914;
+  background-image: linear-gradient(to left, #a178df, #ad82e5, #b88deb, #c397f1, #cea2f7, #cba0f4, #c99df2, #c69bef, #b68be4, #a57cd8, #956dcd, #845ec2);
   color: white;
   position: sticky;
   top: 0;
@@ -15,8 +15,8 @@
 
     button {
       background-color: white !important;
-      color: #1dbf73 !important;
-      border: 1px solid #1dbf73 !important;
+      color: #DCB0FF !important;
+      border: 1px solid #DCB0FF !important;
     }
   }
 
@@ -36,7 +36,7 @@
 
       .dot {
         font-weight: bold;
-        color: #1dbf73;
+        color: #DCB0FF;
       }
     }
     .links {
@@ -91,8 +91,8 @@
         cursor: pointer;
 
         &:hover {
-          background-color: #1dbf73;
-          border-color: #1dbf73;
+          background-color: #DCB0FF;
+          border-color: #DCB0FF;
         }
       }
     }
@@ -110,7 +110,7 @@
     padding: 10px 0px;
     display: flex;
     justify-content: space-between;
-    color: gray;
+    color: white;
     font-weight: 300;
     font-family: "Montserrat", sans-serif;
   }

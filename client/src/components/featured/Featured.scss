@@ -2,7 +2,7 @@
   height: 600px;
   display: flex;
   justify-content: center;
-  background-color: #013914;
+  background-image: linear-gradient(to left, #a178df, #ad82e5, #b88deb, #c397f1, #cea2f7, #cba0f4, #c99df2, #c69bef, #b68be4, #a57cd8, #956dcd, #845ec2);
   color: white;
 
   .container {
@@ -56,7 +56,7 @@
           width: 120px;
           height: 50px;
           border: none;
-          background-color: #1dbf73;
+          background-color: #a178df;
           color: white;
           align-self: flex-end;
           cursor: pointer;
